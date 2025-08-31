@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-    "export": "next export",
     "start": "next start -p 3000",
     "lint": "next lint",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out -t true"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "clsx": "2.1.1",
