@@ -1,7 +1,7 @@
 {
   "name": "ecommerce",
   "version": "1.0.0",
-  "homepage": "https://https://bhavya-official.github.io/EchoShop",
+  "homepage": "https://bhavya-official.github.io/EchoShop",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
@@ -9,7 +9,8 @@
     "export": "next export",
     "start": "next start -p 3000",
     "lint": "next lint",
-    "deploy": "npm run build && npm run export && gh-pages -d out"
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "clsx": "2.1.1",
